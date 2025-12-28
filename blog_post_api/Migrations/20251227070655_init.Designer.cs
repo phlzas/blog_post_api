@@ -12,7 +12,7 @@ using blog_post_api.Data;
 namespace blog_post_api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251226070129_init")]
+    [Migration("20251227070655_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -323,7 +323,6 @@ namespace blog_post_api.Migrations
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")

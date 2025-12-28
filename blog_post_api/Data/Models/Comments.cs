@@ -12,6 +12,6 @@
         public int BlogsId { get; set; }
         public Blogs Blogs { get; set; }
 
-        public ICollection<CommentReaction> Reactions { get; set; } = new List<CommentReaction>();
+        public ICollection<CommentReaction> Reactions { get; set; } = new HashSet<CommentReaction>();
     }
 }

@@ -6,7 +6,7 @@ namespace blog_post_api.Data.Models
 {
     public class Users : IdentityUser
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
         [Required]
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 

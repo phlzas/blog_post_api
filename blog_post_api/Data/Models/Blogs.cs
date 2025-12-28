@@ -10,6 +10,6 @@
         public string UserId { get; set; }
         public Users Users { get; set; } 
         public List<Comments> Comments { get; set; } = new List<Comments>();
-        public ICollection<BlogReaction> Reactions { get; set; }
+        public ICollection<BlogReaction> Reactions { get; set; } = new HashSet<BlogReaction>();
     }
 }
